@@ -79,12 +79,13 @@ class SuratMasukController extends Controller
         // echo "$no_surat";
         $data = $suratmasuk->find($no_surat);
         return view('suratmasuk/edit_surat_masuk')->with([
-            'txtnosurat' => $no_surat,
+            'txtnosurat' =>$no_surat,
             'tglsurat' => $data->tgl_surat,
             'tglditerima' => $data->tgl_terima,
             'txtdari' => $data->dari,
             'txtperihal' => $data->perihal,
             'txtdisposisi' => $data->disposisi,
+            'doc'=>$data->data_nama,
             'txtketerangan' => $data->keterangan
         ]);
     }

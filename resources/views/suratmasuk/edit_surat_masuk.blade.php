@@ -71,7 +71,7 @@
                   <div class="row mb-3">
                     <label for="doc" class="col-sm-2 col-form-label">File Surat</label>
                     <div class="col-sm-4">
-                      <input type="file" class="form-control" id="doc" name="doc">
+                      <input type="file" class="form-control" id="doc" name="doc" >
                     </div>
                   </div>
 
